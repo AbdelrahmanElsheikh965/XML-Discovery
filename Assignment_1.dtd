@@ -1,0 +1,26 @@
+<!ELEMENT library (location, description, librarian, book*)>
+<!ELEMENT location (#PCDATA)>
+<!ELEMENT description (#PCDATA)>
+<!ELEMENT librarian EMPTY>
+<!ELEMENT book (author, preface, part+)>
+
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT preface EMPTY>
+<!ELEMENT part (title, chapter+)>
+
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT chapter (summary, section+)>
+
+<!ELEMENT summary (#PCDATA)>
+<!ELEMENT section (paragraph+)>
+
+<!ELEMENT paragraph (#PCDATA)>
+
+<!ATTLIST book title CDATA #REQUIRED>
+<!ATTLIST book ISBN (123 | 456) #REQUIRED>
+<!ATTLIST chapter title CDATA #IMPLIED>
+<!ENTITY copyright SYSTEM "--URL--/copyright.dtd">
+<!-- 
+  Another solution to refer to an external file
+  <!ENTITY copyright SYSTEM "copyright.ent"> 
+-->
