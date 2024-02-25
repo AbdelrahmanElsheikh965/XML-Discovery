@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 
-<!DOCTYPE library SYSTEM "Assignment_1.dtd">
+<!DOCTYPE library SYSTEM "Library.dtd">
 <library>
 	<location> </location>
 	<description> </description>
