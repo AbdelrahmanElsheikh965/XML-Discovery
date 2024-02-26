@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<catalog>
+	<cd>
+		<title>test-title</title>
+		<artist>test-artist</artist>
+		<country>test-country</country>
+		<company>test-country</company>
+		<price>10.90</price>
+		<year>1985</year>
+	</cd>
+	<cd>
+		<title>test-title</title>
+		<artist>test-artist</artist>
+		<country>test-country</country>
+		<company>test-country</company>
+		<price>10.90</price>
+		<year>1985</year>
+	</cd>
+	<cd>
+		<title>test-title</title>
+		<artist>test-artist</artist>
+		<country>test-country</country>
+		<company>test-country</company>
+		<price>10.90</price>
+		<year>1985</year>
+	</cd>
+	<cd>
+		<title>test-title</title>
+		<artist>test-artist</artist>
+		<country>test-country</country>
+		<company>test-country</company>
+		<price>10.90</price>
+		<year>1985</year>
+	</cd>
+</catalog>
