@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<library>
+	<location> </location>
+	<description> </description>
+	<librarian /> <!-- Meaning has a librarian or not -->
+
+	<book title="AmazingTitle" ISBN="123">
+		<author> Unknown Guy </author>
+		 <preface></preface>	<!-- An empty element -->
+
+		<part>
+			<title> Untitled </title>
+			<chapter>
+				<summary>Perfect chapter here</summary>
+				<section>
+					<paragraph>
+						
+						<![CDATA[
+							Here we can type > or < 
+						]]>
+
+					</paragraph>
+				</section>
+			</chapter>
+		</part>
+
+		<part>
+			<title> Untitled </title>
+			<chapter title="chapter_title">
+				<summary>Perfect chapter here</summary>
+				<section>
+					<paragraph>sample  text to be treated as a section body text paragraph</paragraph>
+					<paragraph>sample text to be treated as a section body text paragraph</paragraph>
+				</section>
+			</chapter>
+
+			<chapter title="chapter_title">
+				<summary>Perfect chapter here</summary>
+				<section>
+					<paragraph>sample text to be treated as a section body text paragraph</paragraph>
+				</section>
+				<section>
+					<paragraph>sample text to be treated as a section body text paragraph</paragraph>
+				</section>
+				<section>
+					<paragraph>sample text to be treated as a section body text paragraph</paragraph>
+					<paragraph>sample text to be treated as a section body text paragraph</paragraph>
+					<paragraph>sample text to be treated as a section body text paragraph</paragraph>
+				</section>
+			</chapter>
+
+		</part>
+
+	</book>
+
+</library>

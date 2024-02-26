@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+<!-- 
+Design a schema of the configuration file for Library.xml.
+• Note: In schema:
+• Use Simple type
+• Use Complex type (Simple content, Complex content)
+• Group (element, attribute)
+ -->
 <xs:element name="library">
     <xs:complexType>
         <xs:sequence>

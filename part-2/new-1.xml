@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+<!-- 
+
+Create XML-Schema to the following XML
+<WeekDay>valid-values</WeekDay>
+• Where its valid-values are:
+• String “Saturday | Sunday | ….. | Thursday”.
+
+ -->
+
+ <!-- Solution 1 (using defulat string data type) -->
     <xs:element name="weekDay">
         <xs:simpleType>
             <xs:union memberTypes="xs:string">
@@ -19,4 +29,27 @@
         </xs:simpleType>
     </xs:element>
 
+
+    <!-- Another Solution using custom type -->
+    <!-- 
+
+            <xs:element name="WeekDay">
+            <xs:simpleType>
+                <xs:union memberTypes="xs:integer WeekDayString"/>
+            </xs:simpleType>
+            </xs:element>
+
+            <xs:simpleType name="WeekDayString">
+            <xs:restriction base="xs:string">
+                <xs:enumeration value="Saturday"/>
+                <xs:enumeration value="Sunday"/>
+                <xs:enumeration value="Monday"/>
+                <xs:enumeration value="Tuesday"/>
+                <xs:enumeration value="Wednesday"/>
+                <xs:enumeration value="Thursday"/>
+                <xs:enumeration value="Friday"/>
+                </xs:restriction>
+            </xs:simpleType>
+  
+     -->
 </xs:schema>
