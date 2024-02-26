@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="library">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="location" type="xs:string"/>
+            <xs:element name="description" type="xs:string"/>
+            <xs:element name="librarian" type="xs:boolean" minOccurs="0"/>
+
+            <xs:element name="book">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="author" type="xs:string"></xs:element>
+                        <xs:element name="preface" type="xs:string"></xs:element>
+                        <xs:element name="part">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="title" type="xs:string"></xs:element>
+                                    <xs:element name="chapter">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element name="summary" type="xs:string"></xs:element>
+                                            <xs:element name="section">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="paragraph" type="xs:string" />
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                        </xs:sequence>
+                                        <xs:attribute name="title" type="xs:string" />
+                                    </xs:complexType>
+                                </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        
+                    </xs:sequence>
+                    <xs:attribute name="title" type="xs:string"/>
+                    <xs:attribute name="ISBN" type="xs:integer"/>
+                </xs:complexType>
+            </xs:element>
+            
+        </xs:sequence>
+    </xs:complexType>
+</xs:element>
+</xs:schema>
