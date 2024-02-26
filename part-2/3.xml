@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 
+<!-- 
+
+Convert the following DTD to XSD
+<!ELEMENT BookStore (Book)+>
+<!ELEMENT Book (Title, Author, Date, ISBN, Publisher)>
+<!ELEMENT Title (#PCDATA)>
+<!ELEMENT Author (#PCDATA)>
+<!ELEMENT Date (#PCDATA)>
+<!ELEMENT ISBN (#PCDATA)>
+<!ELEMENT Publisher (#PCDATA)>
+
+ -->
+ 
   <!-- Define the BookStore element with one or more Book elements -->
   <xs:element name="BookStore">
     <xs:complexType>
